@@ -19,7 +19,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss$/,
+                test: /\.scss$/, //这里会把css直接翻译到dist/js/bundle.js里面
                 use: [{
                     loader: "style-loader" // 将 JS 字符串生成为 style 节点
                 }, {
